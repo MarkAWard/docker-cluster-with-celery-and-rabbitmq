@@ -1,5 +1,7 @@
-from .tasks import longtime_add
+
+from test_celery.tasks import longtime_add
 import time
+
 if __name__ == '__main__':
     for _ in xrange(10):
         result = longtime_add.delay(1,2)
